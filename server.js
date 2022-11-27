@@ -7,9 +7,9 @@ const PORT = 8000;
 app.use(express.json());
 
 //rouetrs
-import taskRouters from "./src/routers/taskRouters.js";
+import taskRouter from "./src/routers/taskRouter.js";
 
-app.use("/api/v1/task", taskRouters);
+app.use("/api/v1/task", taskRouter);
 
 //handle all the uncaught rouetr request
 app.use("*", (req, res, next) => {

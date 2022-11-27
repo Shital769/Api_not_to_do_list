@@ -21,10 +21,10 @@ This api server handles all the atsk request and allow client to run `CRUD` oper
 
 Task router follow the following URL path `{rootUrl}/api/v1/task`. More details as follow
 
-| #   | PATH     | METHOD | IS PRIVATE | DESCRIPTION                                                                                                                      |
-| --- | -------- | ------ | ---------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| 1.  | "/"      | POST   | false      | This api allows client to send taskobject and store in db. The object should be in the following structure `{task: "", type: ""} |
-| 2.  | "/"      | GET    | false      | This api allows client to fetch all the task from database.                                                                      |
-| 3.  | "/"      | PATCH  | false      | This api allows client to switch the task type in database.                                                                      |
-| 3.  | "/:\_id" | DELETE | false      | This api allows client to delete a task based on the given `_id` from database.                                                  |
-| 3.  | "/"      | DELETE | false      | This api allows client to send multiple `\_ids` of tasks to delete multiple items from database.                                 |
+| #   | PATH     | METHOD | IS PRIVATE | DESCRIPTION                                                                                                                                       |
+| --- | -------- | ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.  | "/"      | POST   | false      | This api allows client to send taskobject and store in db. The object should be in the following structure `{task: "", type: ""}                  |
+| 2.  | "/"      | GET    | false      | This api allows client to fetch all the task from database.                                                                                       |
+| 3.  | "/"      | PATCH  | false      | This api allows client to switch the task type in database. Client must send data in the following structure {`_id: "sddfsd, type:"bad or entry`} |
+| 3.  | "/:\_id" | DELETE | false      | This api allows client to delete a task based on the given `_id` from database.                                                                   |
+| 3.  | "/"      | DELETE | false      | This api allows client to send multiple `\_ids` of tasks to delete multiple items from database.                                                  |
